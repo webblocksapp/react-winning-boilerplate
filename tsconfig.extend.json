@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@app-types": ["app-types"],
+      "@components": ["components"],
+      "@layouts": ["layouts"],
+      "@modules/*": ["modules/*"],
+      "@themes": ["themes"]
+    }
+  }
+}
