@@ -1,9 +1,3 @@
-export type CommonStateOpt<T> = {
-  records?: T[];
-  record?: T;
-  error?: string;
-  listing?: boolean;
-  creating?: boolean;
-  updating?: boolean;
-  removing?: boolean;
+export type CommonStateOpt<CommonState> = {
+  [Property in keyof CommonState]?: CommonState[Property];
 };

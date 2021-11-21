@@ -1,6 +1,6 @@
-import { CommonStateOpt, Id } from '@app-types';
+import { CommonState, CommonStateOpt, Id } from '@app-types';
 
-export const stateHandlers = <T extends Id, TState extends CommonStateOpt<T>>() => {
+export const stateHandlers = <T extends Id, TState extends CommonStateOpt<CommonState<T>>>() => {
   const list = (records: T[], state: TState) => {
     return { ...state, records, error: '' };
   };
