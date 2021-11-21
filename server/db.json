@@ -1,0 +1,74 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "Sharyl",
+      "lastName": "Rome",
+      "email": "srome0@geocities.jp",
+      "gender": "Genderfluid"
+    },
+    {
+      "id": 2,
+      "firstName": "Cahra",
+      "lastName": "Poytres",
+      "email": "cpoytres1@imageshack.us",
+      "gender": "Female"
+    },
+    {
+      "id": 3,
+      "firstName": "Gratia",
+      "lastName": "Twentyman",
+      "email": "gtwentyman2@tripod.com",
+      "gender": "Genderqueer"
+    },
+    {
+      "id": 4,
+      "firstName": "Briana",
+      "lastName": "Rudkin",
+      "email": "brudkin3@marriott.com",
+      "gender": "Female"
+    },
+    {
+      "id": 5,
+      "firstName": "Liane",
+      "lastName": "Braunstein",
+      "email": "lbraunstein4@tinyurl.com",
+      "gender": "Polygender"
+    },
+    {
+      "id": 6,
+      "firstName": "Casi",
+      "lastName": "Norgate",
+      "email": "cnorgate5@ihg.com",
+      "gender": "Genderfluid"
+    },
+    {
+      "id": 7,
+      "firstName": "Nelli",
+      "lastName": "Burwin",
+      "email": "nburwin6@mapy.cz",
+      "gender": "Agender"
+    },
+    {
+      "id": 8,
+      "firstName": "Kaleb",
+      "lastName": "Ebbers",
+      "email": "kebbers7@people.com.cn",
+      "gender": "Female"
+    },
+    {
+      "id": 9,
+      "firstName": "Gael",
+      "lastName": "Loomis",
+      "email": "gloomis8@netvibes.com",
+      "gender": "Female"
+    },
+    {
+      "id": 10,
+      "firstName": "Therine",
+      "lastName": "Barns",
+      "email": "tbarns9@tmall.com",
+      "gender": "Polygender"
+    }
+  ]
+}

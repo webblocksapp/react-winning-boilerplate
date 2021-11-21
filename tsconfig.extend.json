@@ -2,11 +2,18 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
+      "@apis": ["apis"],
       "@app-types": ["app-types"],
       "@components": ["components"],
       "@layouts": ["layouts"],
       "@modules/*": ["modules/*"],
-      "@themes": ["themes"]
+      "@reducers": ["reducers"],
+      "@repositories": ["repositories"],
+      "@routes": ["routes"],
+      "@states": ["states"],
+      "@store": ["store"],
+      "@themes": ["themes"],
+      "@utils": ["utils"]
     }
   }
 }
