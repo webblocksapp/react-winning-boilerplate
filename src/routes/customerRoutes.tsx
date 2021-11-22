@@ -1,5 +1,5 @@
 import { RouteObject } from 'react-router-dom';
-import { Customers, CustomerForm, CustomersList } from '@modules/Customers';
+import { Customers, Customer, CustomersList } from '@modules/Customers';
 
 export const customerRoutes: RouteObject[] = [
   {
@@ -7,9 +7,9 @@ export const customerRoutes: RouteObject[] = [
     element: <Customers />,
     children: [
       { path: '', element: <CustomersList /> },
-      { path: 'create', element: <CustomerForm mode="create" /> },
-      { path: ':id/update', element: <CustomerForm mode="update" /> },
-      { path: ':id', element: <CustomerForm mode="view" /> },
+      { path: 'create', element: <Customer mode="create" /> },
+      { path: ':id/update', element: <Customer mode="update" /> },
+      { path: ':id', element: <Customer mode="view" /> },
     ],
   },
 ];

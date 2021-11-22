@@ -18,5 +18,4 @@ export const Customers: React.FC = () => {
 };
 
 export * from './Customer';
-export * from './CustomerForm';
 export * from './CustomersList';
