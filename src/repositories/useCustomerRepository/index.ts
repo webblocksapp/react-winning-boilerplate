@@ -12,7 +12,7 @@ export const useCustomerRepository = () => {
     try {
       dispatch({ type: 'CUSTOMER:LISTING', flag: true });
       const customers = await handleAxiosApi<Customer[]>(customerApi.list());
-      dispatch({ type: 'CUSTOMER:LIST', records: customers });
+      dispatch({ type: 'CUSTOMER:LIST', customers });
     } catch (error) {
       dispatch({ type: 'CUSTOMER:LIST_FAILED', message: getAxiosErrorMessage(error) });
     } finally {
@@ -24,7 +24,7 @@ export const useCustomerRepository = () => {
     try {
       dispatch({ type: 'CUSTOMER:CREATING', flag: true });
       const createdCustomer = await handleAxiosApi<Customer>(customerApi.create(customer));
-      dispatch({ type: 'CUSTOMER:CREATE', record: createdCustomer });
+      dispatch({ type: 'CUSTOMER:CREATE', customer: createdCustomer });
     } catch (error) {
       dispatch({ type: 'CUSTOMER:CREATE_FAILED', message: getAxiosErrorMessage(error) });
     } finally {
@@ -36,7 +36,7 @@ export const useCustomerRepository = () => {
     try {
       dispatch({ type: 'CUSTOMER:UPDATING', flag: true });
       const updatedCustomer = await handleAxiosApi<Customer>(customerApi.update(id, customer));
-      dispatch({ type: 'CUSTOMER:UPDATE', id, record: updatedCustomer });
+      dispatch({ type: 'CUSTOMER:UPDATE', id, customer: updatedCustomer });
     } catch (error) {
       dispatch({ type: 'CUSTOMER:UPDATE_FAILED', message: getAxiosErrorMessage(error) });
     } finally {
@@ -56,7 +56,7 @@ export const useCustomerRepository = () => {
     }
   };
 
-  const getCustomers = (state: RootState) => state.customerState.records;
+  const getCustomers = (state: RootState) => state.customerState.customers;
 
   return {
     list,

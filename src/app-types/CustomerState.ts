@@ -1,3 +1,6 @@
-import { CommonState, Customer } from '@app-types';
+import { Customer, ErrorState, FlagState } from '@app-types';
 
-export type CustomerState = Omit<CommonState<Customer>, 'record'>;
+export type CustomerState = {
+  customers: Customer[];
+} & FlagState &
+  ErrorState;

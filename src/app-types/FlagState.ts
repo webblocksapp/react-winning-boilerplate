@@ -1,7 +1,4 @@
-export type CommonState<T> = {
-  records: T[];
-  record: T;
-  error: string;
+export type FlagState = {
   listing: boolean;
   creating: boolean;
   updating: boolean;

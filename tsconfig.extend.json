@@ -10,7 +10,6 @@
       "@reducers": ["reducers"],
       "@repositories": ["repositories"],
       "@routes": ["routes"],
-      "@states": ["states"],
       "@store": ["store"],
       "@themes": ["themes"],
       "@utils": ["utils"]
