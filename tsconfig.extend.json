@@ -7,7 +7,7 @@
       "@components": ["components"],
       "@layouts": ["layouts"],
       "@modules/*": ["modules/*"],
-      "@reducers": ["reducers"],
+      "@states": ["states"],
       "@repositories": ["repositories"],
       "@routes": ["routes"],
       "@store": ["store"],

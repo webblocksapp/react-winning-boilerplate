@@ -9,3 +9,5 @@ export * from './FlagState';
 export * from './FormMode';
 export * from './FormProps';
 export * from './RootState';
+export * from './SidebarAction';
+export * from './SidebarState';

@@ -1,15 +1,18 @@
 import React from 'react';
-import { Container, Header, WhiteLink as Link } from '@components';
+import { Container, Header, Sidebar } from '@components';
 import { Outlet } from 'react-router-dom';
+import { useSidebarRepository } from '@repositories';
+import { useSelector } from 'react-redux';
 
 export const MainLayout: React.FC = () => {
+  const sidebarRepository = useSidebarRepository();
+  const isSidebarOpen = useSelector(sidebarRepository.getIsSidebarOpen);
+
   return (
     <>
-      <Header>
-        <Link to="/">Home</Link>
-        <Link to="/customers">Customers</Link>
-      </Header>
-      <Container style={{ marginTop: 100 }}>
+      <Header />
+      <Container>
+        <Sidebar open={isSidebarOpen} onClose={sidebarRepository.close} />
         <Outlet />
       </Container>
     </>

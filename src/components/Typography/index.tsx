@@ -1,7 +1,7 @@
 import React, { ElementType } from 'react';
-import { Typography as MuiTypography, TypographyProps as MuiTypographyProps } from '@material-ui/core';
+import { Typography as MuiTypography, TypographyProps as MuiTypographyProps } from '@mui/material';
 
-interface TypographyProps extends MuiTypographyProps {
+export interface TypographyProps extends MuiTypographyProps {
   component?: ElementType<any>;
 }
 

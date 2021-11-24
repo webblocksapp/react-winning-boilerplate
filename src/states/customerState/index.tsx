@@ -10,7 +10,7 @@ const initialState: CustomerState = {
   error: '',
 };
 
-export const customerReducer = (state: CustomerState = initialState, action: CustomerAction) => {
+export const customerState = (state: CustomerState = initialState, action: CustomerAction) => {
   switch (action.type) {
     case 'CUSTOMER:LIST':
       return list(action.customers, state);

@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider } from '@material-ui/core';
 import { defaultTheme } from '@themes';
 import { Provider as StoreProvider } from 'react-redux';
 import { store } from '@store';
+import { ThemeProvider } from '@mui/material';
+import App from './App';
+import ReactDOM from 'react-dom';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>

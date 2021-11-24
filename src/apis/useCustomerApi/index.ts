@@ -12,10 +12,7 @@ export const useCustomerApi = () => {
     return axios.post(`${baseApi}/customers`, customer);
   };
 
-  const update = (
-    id: number,
-    customer: Customer
-  ): Promise<AxiosResponse<Customer>> => {
+  const update = (id: number, customer: Customer): Promise<AxiosResponse<Customer>> => {
     return axios.put(`${baseApi}/customers/${id}`, customer);
   };
 

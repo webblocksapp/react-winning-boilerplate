@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Edit as EditIcon } from '@material-ui/icons';
+import { Edit as EditIcon } from '@mui/icons-material';
 import { IconButton, List, ListItem, Link, Typography } from '@components';
 import { useCustomerRepository } from '@repositories';
 import { useSelector } from 'react-redux';

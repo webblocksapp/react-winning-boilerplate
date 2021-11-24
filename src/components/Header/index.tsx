@@ -1,13 +1,17 @@
 import React from 'react';
-import { AppBar, Box, Toolbar } from '@material-ui/core';
+import { AppBar, IconButton, Toolbar } from '@components';
+import { Menu as MenuIcon } from '@mui/icons-material';
+import { useSidebarRepository } from '@repositories';
 
-export const Header: React.FC = ({ children }) => {
+export const Header: React.FC = () => {
+  const sidebarRepository = useSidebarRepository();
+
   return (
-    <AppBar>
+    <AppBar position="static">
       <Toolbar>
-        <Box display="flex" justifyContent="center" width="100%">
-          {children}
-        </Box>
+        <IconButton edge="start" color="inherit" aria-label="menu" onClick={sidebarRepository.open}>
+          <MenuIcon />
+        </IconButton>
       </Toolbar>
     </AppBar>
   );
